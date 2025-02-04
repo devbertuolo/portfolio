@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <a class="menu__links" href="index.html">Home</a>
+            <a class="menu__links" href="about.html">Sobre mim</a>
+            <a class="menu__links" href="forca.html">Jogo da Forca</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo__forca">Jogo da Forca</h1>
+        <div class="conteudo-principal">
+            <div class="forca-e-letras-usadas">
+                <div class="forca">
+                    <img id="imagem-forca" src="./assets/forca.png" alt="Forca">
+                </div>
+                <div class="letras-usadas">
+                    <p>Letras já usadas:</p>
+                    <div class="letra_ja_usada" id="letras-usadas-container"></div>
+                </div>
+            </div>
+            <div class="palavra-oculta" id="palavra-oculta"></div>
+            <div id="mensagem-final" class="mensagem-final"></div>
+            <div class="teclado">
+                <div class="linha">
+                    <button class="tecla">Q</button>
+                    <button class="tecla">W</button>
+                    <button class="tecla">E</button>
+                    <button class="tecla">R</button>
+                    <button class="tecla">T</button>
+                    <button class="tecla">Y</button>
+                    <button class="tecla">U</button>
+                    <button class="tecla">I</button>
+                    <button class="tecla">O</button>
+                    <button class="tecla">P</button>
+                </div>
+                <div class="linha">
+                    <button class="tecla">A</button>
+                    <button class="tecla">S</button>
+                    <button class="tecla">D</button>
+                    <button class="tecla">F</button>
+                    <button class="tecla">G</button>
+                    <button class="tecla">H</button>
+                    <button class="tecla">J</button>
+                    <button class="tecla">K</button>
+                    <button class="tecla">L</button>
+                </div>
+                <div class="linha">
+                    <button class="tecla">Z</button>
+                    <button class="tecla">X</button>
+                    <button class="tecla">C</button>
+                    <button class="tecla">V</button>
+                    <button class="tecla">B</button>
+                    <button class="tecla">N</button>
+                    <button class="tecla">M</button>
+                </div>
+            </div>
+        </div>
+    </main> 
+    
+    <footer>
+        <p class="rodape">Desenvolvido por Fernando Bertuolo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
