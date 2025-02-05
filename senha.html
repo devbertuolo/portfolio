@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Senha</title>
+        <link rel="stylesheet" href="./estilos/style.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <nav class="menu">
+                <a class="menu__links" href="index.html">Home</a>
+                <a class="menu__links" href="about.html">Sobre mim</a>
+                <a class="menu__links" href="others.html">Outros</a>
+            </nav>
+        </header>
+
+        <main class="conteudo_geral_senha">
+            <h1 class="titulo_senha">Jogo da Senha</h1>
+            <div class="conteudo_senha">
+                <p class="paragrafo_senha">Digite os números de 4 dígitos:</p>
+                <div class="chute_senha">
+                    <input class="area_chute" type="text" id="userInput1" maxlength="1">
+                    <input class="area_chute" type="text" id="userInput2" maxlength="1">
+                    <input class="area_chute" type="text" id="userInput3" maxlength="1">
+                    <input class="area_chute" type="text" id="userInput4" maxlength="1">
+                </div>
+            </div>
+            <p class="resultado_senha" id="resultado"></p>
+            <div class="conteudo_senha_btn">
+                <button class="senha_btn" onclick="verificarPalpite()">Verificar</button>
+                <button class="senha_btn" onclick="reiniciarJogo()">Reiniciar</button>
+            </div>
+        </main>
+
+        <footer class="rodape">
+            <p>Desenvolvido por Fernando Bertuolo</p>
+        </footer>
+
+        <script src="./js/senha.js"></script>
+    </body>
+
+</html>
