@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+        <link id="style" rel="stylesheet" href="./css/senha-1.css">
+        <title>Jogo da Senha</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img id="logo-dev" src="imagens/logo.png">
+                </a>
+            </div>
+    
+            <ul class="nav-links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="forca.html">Forca</a></li>
+                <li class="link"><a href="secret.html">Secreto</a></li>
+                <li class="link"><a href="velha.html">Velha</a></li>
+            </ul>
+    
+            <div class="nav-btns">
+                <button class="btn">Contato</button>
+                <div>
+                    <input type="checkbox" class="checkbox" id="chk">
+        
+                    <label class="label" for="chk">
+                        <i class="ri-moon-fill"></i>
+                        <i class="ri-sun-fill"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+
+        <main class="conteudo_geral_senha">
+            <h1 class="titulo_senha">Jogo da Senha</h1>
+            <div class="conteudo_senha">
+                <p class="paragrafo_senha">Digite os números de 4 dígitos:</p>
+                <div class="chute_senha">
+                    <div class="input-container">
+                        <input class="area_chute" type="text" id="userInput1" maxlength="1">
+                        <div class="quadrado" id="quadrado1"></div>
+                    </div>
+                    <div class="input-container">
+                        <input class="area_chute" type="text" id="userInput2" maxlength="1">
+                        <div class="quadrado" id="quadrado2"></div>
+                    </div>
+                    <div class="input-container">
+                        <input class="area_chute" type="text" id="userInput3" maxlength="1">
+                        <div class="quadrado" id="quadrado3"></div>
+                    </div>
+                    <div class="input-container">
+                        <input class="area_chute" type="text" id="userInput4" maxlength="1">
+                        <div class="quadrado" id="quadrado4"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="resultado_senha" id="resultado"></p>
+            <div class="conteudo_senha_btn">
+                <button class="senha_btn" onclick="verificarPalpite()">Verificar</button>
+                <button class="senha_btn" onclick="reiniciarJogo()">Reiniciar</button>
+            </div>
+        </main>
+
+        <footer class="container">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="column">
+                <div class="logo">
+                    <img id="logo-dev2" src="./imagens/logo.png">
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/devbertuolo"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/fernandobertuolo/"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/senha.js"></script>
+    </body>
+
+</html>

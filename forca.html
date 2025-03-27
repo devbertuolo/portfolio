@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link id="style" rel="stylesheet" href="./css/forca-1.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img id="logo-dev" src="imagens/logo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="secret.html">Secreto</a></li>
+            <li class="link"><a href="velha.html">Velha</a></li>
+            <li class="link"><a href="senha.html">Senha</a></li>
+        </ul>
+
+        <div class="nav-btns">
+            <button class="btn">Contato</button>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+        </div>
+        
+        <h1 class="titulo__forca">Jogo da Forca</h1>
+        <div class="conteudo-principal">
+            <div class="forca-e-letras-usadas">
+                <div class="forca">
+                    <img id="imagem-forca" src="./imagens/forca.png" alt="Forca">
+                </div>
+                <div class="letras-usadas">
+                    <p>Letras já usadas:</p>
+                    <div class="letra_ja_usada" id="letras-usadas-container"></div>
+                </div>
+            </div>
+            <div class="palavra-oculta" id="palavra-oculta"></div>
+            <div id="mensagem-final" class="mensagem-final"></div>
+            <div class="teclado">
+                <div class="linha">
+                    <button class="tecla">Q</button>
+                    <button class="tecla">W</button>
+                    <button class="tecla">E</button>
+                    <button class="tecla">R</button>
+                    <button class="tecla">T</button>
+                    <button class="tecla">Y</button>
+                    <button class="tecla">U</button>
+                    <button class="tecla">I</button>
+                    <button class="tecla">O</button>
+                    <button class="tecla">P</button>
+                </div>
+                <div class="linha">
+                    <button class="tecla">A</button>
+                    <button class="tecla">S</button>
+                    <button class="tecla">D</button>
+                    <button class="tecla">F</button>
+                    <button class="tecla">G</button>
+                    <button class="tecla">H</button>
+                    <button class="tecla">J</button>
+                    <button class="tecla">K</button>
+                    <button class="tecla">L</button>
+                </div>
+                <div class="linha">
+                    <button class="tecla">Z</button>
+                    <button class="tecla">X</button>
+                    <button class="tecla">C</button>
+                    <button class="tecla">V</button>
+                    <button class="tecla">B</button>
+                    <button class="tecla">N</button>
+                    <button class="tecla">M</button>
+                </div>
+                <div class="area_reiniciar">
+                    <button class="botao__reiniciar" id="reiniciar-btn">Reiniciar</button>
+                    <a href="index.html" class="botao__reiniciar">Voltar</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img id="logo-dev2" src="./imagens/logo.png">
+            </div>
+            <div class="socials">
+                <a href="https://github.com/devbertuolo"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/fernandobertuolo/"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2025 Fernando Bertuolo. All Rights Reserved
+    </div>
+
+    <script src="./js/forca.js"></script>
+</body>
+</html>

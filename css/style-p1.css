@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: #18181B;
+    --color2: #fff;
+    --color3: #c02218;
+    --color4: #a50d03;
+    --color5: #ccc;
+    --color6: #27272a;
+    --color7: #323232;
+    --color8: #808080;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 200px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-btns {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--color2);
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color3);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: var(--color2);
+    background-color: var(--color3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color4);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: var(--color3);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: var(--color2);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.5px;
+    left: 3px;
+
+    height: 18px;
+    width: 18px;
+
+    transform: translateX(0px);
+    transition: tranform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.ri-moon-fill {
+    color: var(--color2);
+    scale: 0.9;
+    padding: 1px 0px;
+}
+
+.ri-sun-fill {
+    color: var(--color2);
+    scale: 0.9;
+    padding: 1px 1px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--color3);
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: var(--color5);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: var(--color2);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--color2);
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: var(--color5);
+}
+
+header .image {
+    position: relative;
+}
+
+header .image img {
+    max-width: 400px;
+    margin: auto;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: var(--color2);
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card {
+    background-color: var(--color6);
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover {
+    background-color: var(--color7);
+    border-color: var(--color2);
+}
+
+.features .card span {
+    display: inline-block;
+    background-color: var(--color3);
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: var(--color2);
+    border-radius: 10px;
+}
+
+.features .card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--color2);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p {
+    color: var(--color5);
+    margin: 1rem;
+}
+
+.features .card a {
+    color: var(--color2);
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+    color: var(--color3);
+}
+
+footer .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+footer .column .logo {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+}
+
+footer .column .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a {
+    color: var(--color5);
+    border: 2px solid var(--color5);
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+    color: var(--color2);
+    background-color: var(--color3);
+    border-color: var(--color3);
+}
+
+footer .column h4 {
+    color: var(--color2);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a {
+    display: block;
+    color: var(--color5);
+    margin-bottom: 1rem;
+    transition: all 0.3 ease;
+}
+
+footer .column > a:hover {
+    color: var(--color3);
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding:  1rem;
+    color: var(--color2);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .image {
+        grid-area: 1/1/2/2;
+    }
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px) {
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
